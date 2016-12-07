@@ -1,0 +1,24 @@
+{
+  "name": "30-seconds",
+  "version": "0.0.0",
+  "description": "30 seconds app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johnkariuki/30-seconds.git"
+  },
+  "keywords": [
+    "30-seconds",
+    "tia",
+    "andela"
+  ],
+  "author": "John Kariuki (https://github.com/johnkariuki)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnkariuki/30-seconds/issues"
+  },
+  "homepage": "https://github.com/johnkariuki/30-seconds#readme"
+}
