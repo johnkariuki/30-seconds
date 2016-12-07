@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/johnkariuki/30-seconds/issues"
   },
-  "homepage": "https://github.com/johnkariuki/30-seconds#readme"
+  "homepage": "https://github.com/johnkariuki/30-seconds#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "firebase": "^3.6.3",
+    "lodash": "^4.17.2",
+    "needle": "^1.4.2"
+  },
+  "devDependencies": {}
 }
