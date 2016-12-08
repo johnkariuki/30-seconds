@@ -17,7 +17,10 @@ module.exports = {
             throw 'No URL provided.';
         }
 
-        needle.get(url, (err, res, data) => {
+        let options = {
+            open_timeout: 30000
+        }
+        needle.get(url, options, (err, res, data) => {
             if (err || res.statusCode !== 200) {
                 throw 'Error! Status code: ' + res.statusCode + ' (' + err.message + ')';
             }
@@ -27,7 +30,6 @@ module.exports = {
                     throw 'something is not in array format.';
                 }
             });
-
             cb(data);
         });
     },
