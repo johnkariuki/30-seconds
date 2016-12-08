@@ -18,7 +18,10 @@ def spider():
     print(brands)
     return brands
 
-    with open("brands.txt", "w") as f:
-        f.write(brands)
 
-spider()
+def write_to_file():
+    with open("brands.txt", "w") as file:
+        file.write(str(spider()))
+        print('Written to brands file.')
+
+write_to_file()
