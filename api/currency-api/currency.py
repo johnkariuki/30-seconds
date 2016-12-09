@@ -18,7 +18,10 @@ def open_csv():
 
             # Convert to normal characters
             normalised_currency = unicodedata.normalize('NFKD', unicode_city).encode('ascii', 'ignore')
-            currency['currency'].append(normalised_currency)
+            if normalised_currency not in currency['currency']:
+                currency['currency'].append(normalised_currency)
+            else:
+                currency['currency'] = currency['currency']
         return currency
 
 
