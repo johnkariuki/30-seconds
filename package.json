@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "starwars": "nodemon ./api/starwars-api/index.js",
+    "cities": "nodemon ./api/cities-api/index.js",
     "test": "npm test"
   },
   "repository": {
