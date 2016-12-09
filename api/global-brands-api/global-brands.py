@@ -15,12 +15,11 @@ def spider():
     for links in soup_object.findAll('div', {'class': 'brand-name'}):
         normalised_brands = unicodedata.normalize('NFKD', links.string).encode('ascii', 'ignore')
         brands['brands'].append((normalised_brands).replace('\n', '').replace(' ', ''))
-    print(brands)
     return brands
 
 
 def write_to_file():
-    with open("brands.txt", "w") as file:
+    with open('brands.txt', 'w') as file:
         file.write(str(spider()))
         print('Written to brands file.')
 
