@@ -6,6 +6,7 @@
   "scripts": {
     "starwars": "nodemon ./api/starwars-api/index.js",
     "cities": "nodemon ./api/cities-api/index.js",
+    "countries": "nodemon ./api/countries-api/index.js",
     "test": "npm test"
   },
   "repository": {
