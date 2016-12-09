@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import unicodedata
+import json
 
 brands = {
     'brands': []
@@ -19,8 +20,8 @@ def spider():
 
 
 def write_to_file():
-    with open('brands.txt', 'w') as file:
-        file.write(str(spider()))
+    with open('brands.json', 'w') as file:
+        json.dump(str(spider()), file)
         print('Written to brands file.')
 
 write_to_file()
